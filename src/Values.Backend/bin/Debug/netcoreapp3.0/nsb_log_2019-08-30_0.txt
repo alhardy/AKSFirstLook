@@ -1,0 +1,488 @@
+﻿2019-08-30 22:11:18.699 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Backend/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 22:11:18.897 INFO  NServiceBus.LicenseManager No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-08-30 22:12:27.680 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Backend/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 22:12:27.860 INFO  NServiceBus.LicenseManager No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-08-30 22:13:00.283 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Backend/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 22:13:00.468 INFO  NServiceBus.LicenseManager No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-08-30 22:14:28.456 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Backend/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 22:14:28.651 INFO  NServiceBus.LicenseManager No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-08-30 22:24:43.331 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Backend/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 22:24:43.560 INFO  NServiceBus.LicenseManager No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-08-30 22:25:43.730 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Backend/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 22:25:43.974 INFO  NServiceBus.LicenseManager No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-08-30 22:26:08.670 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: 2a2f2e8e-b2fc-4b44-927a-aab900cceea0
+2019-08-30 22:26:08.861 ERROR NServiceBus.RecoverabilityExecutor Moving message '2a2f2e8e-b2fc-4b44-927a-aab900cceea0' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 2a2f2e8e-b2fc-4b44-927a-aab900cceea0
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:26.204 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: 6d9eba76-d9a9-428d-8681-aab900cd03c3
+2019-08-30 22:26:26.210 ERROR NServiceBus.RecoverabilityExecutor Moving message '6d9eba76-d9a9-428d-8681-aab900cd03c3' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 6d9eba76-d9a9-428d-8681-aab900cd03c3
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:26.797 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: 21b0ccce-333e-4d99-8034-aab900cd047d
+2019-08-30 22:26:26.801 ERROR NServiceBus.RecoverabilityExecutor Moving message '21b0ccce-333e-4d99-8034-aab900cd047d' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 21b0ccce-333e-4d99-8034-aab900cd047d
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:28.184 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: 9d0a6572-d1d1-4216-a6d6-aab900cd061e
+2019-08-30 22:26:28.193 ERROR NServiceBus.RecoverabilityExecutor Moving message '9d0a6572-d1d1-4216-a6d6-aab900cd061e' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 9d0a6572-d1d1-4216-a6d6-aab900cd061e
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:28.372 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: 6510f460-5a21-40db-8f04-aab900cd0641
+2019-08-30 22:26:28.377 ERROR NServiceBus.RecoverabilityExecutor Moving message '6510f460-5a21-40db-8f04-aab900cd0641' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 6510f460-5a21-40db-8f04-aab900cd0641
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:28.416 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: a93d2bc8-db75-4849-a01a-aab900cd0656
+2019-08-30 22:26:28.421 ERROR NServiceBus.RecoverabilityExecutor Moving message 'a93d2bc8-db75-4849-a01a-aab900cd0656' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message a93d2bc8-db75-4849-a01a-aab900cd0656
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:28.651 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: 46e24d33-f52d-4623-b687-aab900cd069e
+2019-08-30 22:26:28.656 ERROR NServiceBus.RecoverabilityExecutor Moving message '46e24d33-f52d-4623-b687-aab900cd069e' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 46e24d33-f52d-4623-b687-aab900cd069e
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:52.959 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: 63da113b-40c4-4bf2-85ed-aab900cd2317
+2019-08-30 22:26:52.965 ERROR NServiceBus.RecoverabilityExecutor Moving message '63da113b-40c4-4bf2-85ed-aab900cd2317' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 63da113b-40c4-4bf2-85ed-aab900cd2317
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:53.204 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: a6bea3f4-1930-4371-b573-aab900cd235e
+2019-08-30 22:26:53.209 ERROR NServiceBus.RecoverabilityExecutor Moving message 'a6bea3f4-1930-4371-b573-aab900cd235e' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message a6bea3f4-1930-4371-b573-aab900cd235e
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:53.339 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: 7d544eba-4d39-44fc-8568-aab900cd239a
+2019-08-30 22:26:53.345 ERROR NServiceBus.RecoverabilityExecutor Moving message '7d544eba-4d39-44fc-8568-aab900cd239a' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 7d544eba-4d39-44fc-8568-aab900cd239a
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:53.529 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: 92432ce5-3e1b-4a8d-b041-aab900cd23d3
+2019-08-30 22:26:53.534 ERROR NServiceBus.RecoverabilityExecutor Moving message '92432ce5-3e1b-4a8d-b041-aab900cd23d3' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 92432ce5-3e1b-4a8d-b041-aab900cd23d3
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:53.761 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: 7db19009-6ca4-493c-aeb5-aab900cd2412
+2019-08-30 22:26:53.767 ERROR NServiceBus.RecoverabilityExecutor Moving message '7db19009-6ca4-493c-aeb5-aab900cd2412' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 7db19009-6ca4-493c-aeb5-aab900cd2412
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:53.894 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: 2ffd3e3a-e946-43cd-ac93-aab900cd243e
+2019-08-30 22:26:53.898 ERROR NServiceBus.RecoverabilityExecutor Moving message '2ffd3e3a-e946-43cd-ac93-aab900cd243e' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 2ffd3e3a-e946-43cd-ac93-aab900cd243e
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:54.061 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: 1bd9cd39-1f31-44eb-be34-aab900cd2471
+2019-08-30 22:26:54.066 ERROR NServiceBus.RecoverabilityExecutor Moving message '1bd9cd39-1f31-44eb-be34-aab900cd2471' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 1bd9cd39-1f31-44eb-be34-aab900cd2471
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:54.254 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: d4561f2b-1120-4932-aad7-aab900cd24a2
+2019-08-30 22:26:54.258 ERROR NServiceBus.RecoverabilityExecutor Moving message 'd4561f2b-1120-4932-aad7-aab900cd24a2' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message d4561f2b-1120-4932-aad7-aab900cd24a2
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:54.427 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: d8a3b7a3-7c99-4550-a048-aab900cd24df
+2019-08-30 22:26:54.433 ERROR NServiceBus.RecoverabilityExecutor Moving message 'd8a3b7a3-7c99-4550-a048-aab900cd24df' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message d8a3b7a3-7c99-4550-a048-aab900cd24df
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:54.768 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: 23ae35ab-3b4e-40e1-8282-aab900cd2509
+2019-08-30 22:26:54.768 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: 524a6d23-391a-417b-8fc0-aab900cd252e
+2019-08-30 22:26:54.779 ERROR NServiceBus.RecoverabilityExecutor Moving message '23ae35ab-3b4e-40e1-8282-aab900cd2509' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 23ae35ab-3b4e-40e1-8282-aab900cd2509
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:54.779 ERROR NServiceBus.RecoverabilityExecutor Moving message '524a6d23-391a-417b-8fc0-aab900cd252e' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 524a6d23-391a-417b-8fc0-aab900cd252e
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:54.899 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: ee23ac5d-8162-422a-bb05-aab900cd2569
+2019-08-30 22:26:54.903 ERROR NServiceBus.RecoverabilityExecutor Moving message 'ee23ac5d-8162-422a-bb05-aab900cd2569' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message ee23ac5d-8162-422a-bb05-aab900cd2569
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:55.083 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: b4b1899c-3b0b-4e0a-af08-aab900cd259e
+2019-08-30 22:26:55.088 ERROR NServiceBus.RecoverabilityExecutor Moving message 'b4b1899c-3b0b-4e0a-af08-aab900cd259e' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message b4b1899c-3b0b-4e0a-af08-aab900cd259e
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:55.235 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: 32d73ba7-eee9-4b81-80b0-aab900cd25cb
+2019-08-30 22:26:55.284 ERROR NServiceBus.RecoverabilityExecutor Moving message '32d73ba7-eee9-4b81-80b0-aab900cd25cb' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 32d73ba7-eee9-4b81-80b0-aab900cd25cb
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:55.424 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: 908c22f2-1e62-4be5-99ad-aab900cd2607
+2019-08-30 22:26:55.429 ERROR NServiceBus.RecoverabilityExecutor Moving message '908c22f2-1e62-4be5-99ad-aab900cd2607' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 908c22f2-1e62-4be5-99ad-aab900cd2607
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:55.717 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: 01701d22-a624-428b-8e9e-aab900cd2662
+2019-08-30 22:26:55.723 ERROR NServiceBus.RecoverabilityExecutor Moving message '01701d22-a624-428b-8e9e-aab900cd2662' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 01701d22-a624-428b-8e9e-aab900cd2662
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:26:55.851 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'Values.Api.Application.ValuesCommand'. MessageId: c362b983-50af-4f18-bbae-aab900cd268b
+2019-08-30 22:26:55.857 ERROR NServiceBus.RecoverabilityExecutor Moving message 'c362b983-50af-4f18-bbae-aab900cd268b' to the error queue 'error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message c362b983-50af-4f18-bbae-aab900cd268b
+ ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType)
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage)
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message)
+   at NServiceBus.DeserializeLogicalMessagesConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.Transport.AzureServiceBus.TransactionScopeSuppressBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`1 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.ProcessMessage(Task`1 receiveTask)
+2019-08-30 22:29:03.531 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Backend/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 22:29:03.735 INFO  NServiceBus.LicenseManager No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-08-30 22:48:47.699 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Backend/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 22:48:47.915 INFO  NServiceBus.LicenseManager No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-08-30 22:52:11.432 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Backend/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 22:52:11.591 INFO  NServiceBus.LicenseManager No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-08-30 22:52:43.117 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Backend/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 22:52:43.273 INFO  NServiceBus.LicenseManager No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+

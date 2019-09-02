@@ -1,0 +1,8 @@
+apiVersion: "aadpodidentity.k8s.io/v1"
+kind: AzureIdentity
+metadata:
+  name: values-microservice-identity
+spec:
+  type: 0
+  ResourceID: $IDENTITY_FULL_ID
+  ClientID: $CLIENTID

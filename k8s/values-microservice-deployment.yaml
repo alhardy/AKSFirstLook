@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: values-microservice-deployment
+  namespace: $NAMESPACE
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      tier: backend
+      ms: values
+      apptype: api
+      aadpodidbinding: values-microservice-identity-binding
+  template:
+    metadata:
+      labels:
+        tier: backend
+        ms: values
+        apptype: api
+        aadpodidbinding: values-microservice-identity-binding
+    spec:
+      containers:
+        - name: values-microservice
+          image: $ACR_NAME.azurecr.io/values-microservice:latest
+          env:
+            - name: ASPNETCORE_URLS
+              value: http://*:80
+          ports:
+            - containerPort: 80
+          livenessProbe:
+            httpGet:
+              path: /meta/healthy
+              port: 80
+            initialDelaySeconds: 30
+            timeoutSeconds: 30
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /meta/ready
+              port: 80
+            initialDelaySeconds: 30
+            timeoutSeconds: 30
+            periodSeconds: 10
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "0.1"
+            limits:
+              memory: "96Mi"
+              cpu: "0.2"

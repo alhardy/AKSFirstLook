@@ -1,0 +1,27 @@
+﻿2019-08-30 21:39:04.767 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Api/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 21:39:04.902 INFO  NServiceBus.LicenseManager No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-08-30 21:40:21.374 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Api/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 21:40:21.503 INFO  NServiceBus.LicenseManager No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-08-30 21:44:38.879 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Api/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 21:44:39.003 INFO  NServiceBus.LicenseManager No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-08-30 22:23:04.891 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Api/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 22:23:05.070 INFO  NServiceBus.LicenseManager No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-08-30 22:24:41.170 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Api/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 22:24:41.351 INFO  NServiceBus.LicenseManager No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-08-30 22:25:56.127 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Api/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 22:25:56.266 INFO  NServiceBus.LicenseManager No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-08-30 22:29:14.156 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Api/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 22:29:14.315 INFO  NServiceBus.LicenseManager No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-08-30 22:52:39.658 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Api/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 22:52:39.831 INFO  NServiceBus.LicenseManager No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-08-30 23:23:56.741 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Api/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 23:28:26.378 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Api/bin/Debug/netcoreapp3.0/' with level Info
+2019-08-30 23:29:07.805 INFO  DefaultFactory Logging to '/home/al_hardy/Documents/_dev/_play/AksDemo/src/Values.Api/bin/Debug/netcoreapp3.0/' with level Info
